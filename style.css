@@ -13,7 +13,15 @@ tlačítko Twitter aktivní:	 #0b7bc1
 tlačítko Facebook:				 #3b5998
 tlačítko Facebook aktivní: #2b406e
 */
-
+.foto {
+    position: absolute;
+    border: 3px solid white;
+    border-radius: 100%;
+    box-sizing: border-box;
+    width: 150px;
+    left: 950px;
+    top: 70px;
+}
 body {
     background-color: #b2bec3;
 }
@@ -35,10 +43,11 @@ p {
     background-color: white;
     border-radius: 10px;
     padding: 30px;
-    margin: 150px auto;
+    margin: 150px auto 0 auto;
     box-sizing: border-box;
     width: 550px;
     box-shadow: 5px 5px 10px rgb(92, 92, 92);
+    font-family: 'Nunito', sans-serif;
 }
 
 .bottom1,
