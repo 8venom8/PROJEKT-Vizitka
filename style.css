@@ -14,16 +14,25 @@ tlačítko Facebook:				 #3b5998
 tlačítko Facebook aktivní: #2b406e
 */
 .foto {
-    position: absolute;
     border: 3px solid white;
     border-radius: 100%;
-    box-sizing: border-box;
     width: 150px;
-    left: 950px;
-    top: 70px;
 }
+
+.obrazek {
+    position: relative;
+    z-index: 1; /* obrázek nebude pod vizitkou ale nad */
+    margin-top: -100px;
+    margin-left: 420px;
+}
+
 body {
     background-color: #b2bec3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
 }
 
 h1 {
@@ -38,12 +47,11 @@ p {
     font-size: 18px;
 }
 .sekce {
-    border: none white;
+    position: relative; /* Nejčastěji se nastavuje relative, protože tu samou vizitku to nikam neposune. Nastavuju to ptoto, že position u foto se musí vztahovat k nejbližšímu rodiči co má nastavený position, což by bylo k body a to nechci. */
     color: black;
     background-color: white;
     border-radius: 10px;
     padding: 30px;
-    margin: 150px auto 0 auto;
     box-sizing: border-box;
     width: 550px;
     box-shadow: 5px 5px 10px rgb(92, 92, 92);
